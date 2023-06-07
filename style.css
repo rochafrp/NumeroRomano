@@ -1,0 +1,88 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#000000, #82b900);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin: 0 0 50px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.container .form-group {
+  position: relative;
+}
+
+.container .form-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.container .form-group label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.container .form-group input:valid ~ label,
+.container .form-group input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #82b900;
+  font-size: 12px;
+}
+
+.container button {
+  position: relative;
+  display:inline-block;
+  padding: 10px 14px;
+  color: #000000;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 10px;
+  letter-spacing: 4px
+}
+
+.container button:hover {
+  background: #82b900;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f4c803,
+              0 0 25px #bd9d0b,
+              0 0 50px #f4e403,
+              0 0 100px #d5cf1e;
+}
+

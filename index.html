@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Conversor de Números Romanos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Números Romanos</h1>
+
+      <div class="form-group">
+        <input type="number" id="arabic" min="0" max="3999">
+        <label for="arabic">Número Arábico:</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="roman">
+        <label for="roman">Número Romano:</label>
+
+      </div>  
+
+      <div class="result">
+        <button onclick="convertToRoman()">Converter para Romano</button>
+        <button onclick="convertToArabic()">Converter para Arábico</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
