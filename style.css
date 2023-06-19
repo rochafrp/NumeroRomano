@@ -22,10 +22,16 @@ body {
 }
 
 .container h1 {
-  margin: 0 0 50px;
-  padding: 0;
-  color: #fff;
+  margin: 0 0 40px;
   text-align: center;
+  position: relative;
+  padding: 12px;
+  color: #000000;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: #fff;;
+  border-radius: 5px;
 }
 
 .container .form-group {
@@ -43,15 +49,20 @@ body {
   outline: none;
   background: transparent;
 }
+
 .container .form-group label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
   pointer-events: none;
   transition: .5s;
+}
+
+.container .form-group input:focus {
+  outline: none;
 }
 
 .container .form-group input:valid ~ label,
@@ -65,7 +76,7 @@ body {
 .container button {
   position: relative;
   display:inline-block;
-  padding: 10px 14px;
+  padding: 10px 13px;
   color: #000000;
   font-size: 10px;
   text-decoration: none;
@@ -73,7 +84,9 @@ body {
   overflow: hidden;
   transition: .5s;
   margin-top: 10px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .container button:hover {
